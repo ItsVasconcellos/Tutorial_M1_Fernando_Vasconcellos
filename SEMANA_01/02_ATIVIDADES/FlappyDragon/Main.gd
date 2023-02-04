@@ -1,9 +1,13 @@
 extends Node # instancia a classe Node2D
 
 var status = 1
+#A variável status é para indicar o ínicio do jogo, mostrando o press.
 var vscore = 0
-var x = 1.5 
-var y = 1.5 
+#A vairável vscore é utilizada para medir a ponutação do jogo.
+var x = 10 
+#É a velocidade em que o cenário é percorrido, ou seja que anda no eixo x
+var y = 1.5
+#É a váriavel utilizada como gravidade do jogo, ou seja que anda no eixo y.
 
 # executa essa função ao carregar o jogo
 func _ready():
