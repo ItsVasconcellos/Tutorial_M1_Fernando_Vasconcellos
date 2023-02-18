@@ -7,13 +7,13 @@ var listaPersonagens = ["Luke", "Leia" , "Han", "C3PO", "Darth Vader"]
 func _ready():
 	pass # Replace with function body.
 
-#Exercício
+#Exercício 2
 func _on_Button1_pressed():
-	if $LineEdit2.text.empty():
+	if $LineEdit.text.empty():
 		$Label.text = "Escreva algo para aparecer!"
 	else:
 		var listaUsuario = []
-		listaUsuario = $LineEdit2.text.split(" ")
+		listaUsuario = $LineEdit.text.split(" ")
 		var texto = ""
 		for n in listaUsuario:
 			texto += n + "\n"
@@ -23,10 +23,10 @@ func _on_Button1_pressed():
 
 #Exercício 4 -> Crie uma função que insira um valor digitado pelo usuário
 func _on_Button2_pressed():
-	if $LineEdit3.text.empty():
+	if $LineEdit2.text.empty():
 		$Label2.text = "Escreva algo para aparecer!"
 	else:
-		$Label2.text = $LineEdit3.text
+		$Label2.text = $LineEdit2.text
 
 #Exercício 1 -> Mostra uma lista já pronta na tela!
 func _on_Button3_pressed():
