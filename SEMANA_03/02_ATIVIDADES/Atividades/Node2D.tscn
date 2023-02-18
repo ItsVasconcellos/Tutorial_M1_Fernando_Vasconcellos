@@ -1,0 +1,95 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Script.gd" type="Script" id=1]
+[ext_resource path="res://a1227e46c80834cfbb41d870898e232c.jpg" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="A1227E46C80834Cfbb41D870898E232c" type="Sprite" parent="."]
+position = Vector2( 529, 322 )
+scale = Vector2( 0.54987, 0.593287 )
+texture = ExtResource( 2 )
+
+[node name="Button1" type="Button" parent="."]
+margin_left = 80.0
+margin_top = 150.0
+margin_right = 269.0
+margin_bottom = 215.0
+text = "Exercício 2"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 80.0
+margin_top = 40.0
+margin_right = 268.0
+margin_bottom = 139.0
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 340.0
+margin_top = 150.0
+margin_right = 529.0
+margin_bottom = 215.0
+text = "Exercício 4"
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 340.0
+margin_top = 40.0
+margin_right = 528.0
+margin_bottom = 139.0
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 80.0
+margin_top = 360.0
+margin_right = 269.0
+margin_bottom = 425.0
+rect_pivot_offset = Vector2( 266, 33 )
+text = "Exercício 1"
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 340.0
+margin_top = 360.0
+margin_right = 529.0
+margin_bottom = 419.0
+text = "Exercício 3"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 80.0
+margin_top = 250.0
+margin_right = 120.0
+margin_bottom = 264.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "
+"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 346.0
+margin_top = 235.0
+margin_right = 386.0
+margin_bottom = 266.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "
+
+"
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 77.0
+margin_top = 439.0
+margin_right = 117.0
+margin_bottom = 470.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "
+"
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 341.0
+margin_top = 438.0
+margin_right = 381.0
+margin_bottom = 469.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "
+"
+
+[connection signal="pressed" from="Button1" to="." method="_on_Button1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
