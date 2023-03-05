@@ -42,7 +42,7 @@ func _on_Button3_pressed():
 		if(cont!=0):
 			nome = nome + " Baldo"
 			$Label2.text = nome
-			#Adicionando um break para que ele adicione baldo apenas uma única vez
+			#Adicionando um break para que ele adicione baldo apenas uma única vez''''''''''''''''''
 			break
 		i+=1
 
