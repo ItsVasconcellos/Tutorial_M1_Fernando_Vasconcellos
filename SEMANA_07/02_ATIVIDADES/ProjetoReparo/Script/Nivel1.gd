@@ -5,7 +5,8 @@ var bau2 = false
 #Variáveis de controle para saber se está na área para abrir o baú
 var bauCanShow1 = false
 var bauCanShow2 = false
-
+#Controle do timer
+var TimerIniciado = false
 
 func _ready():
 #	Esconde atributos os quais apareceram mais para frente do jogo.
@@ -79,7 +80,10 @@ func _process(delta):
 	if bau2 && bau1:
 		$Mago/ColorRect.hide()
 		$Mago/ColorRect/Label.hide()
-		$Timer.start()
+		if !TimerIniciado:
+			TimerIniciado = true
+			$Timer.start()
+
 
 
 func _on_Timer_timeout():
